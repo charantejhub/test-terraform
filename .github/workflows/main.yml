@@ -28,6 +28,7 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+        working-directory: ./modules/sns
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
